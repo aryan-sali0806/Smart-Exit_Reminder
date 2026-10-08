@@ -1,0 +1,50 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Environment / secrets ─────────────────────────────────
+.env
+.env.local
+.env.*.local
+# Keep the example files
+!.env.example
+
+# ── Node.js / React / Vite ────────────────────────────────
+node_modules/
+dist/
+.cache/
+*.tsbuildinfo
+
+# ── PlatformIO ────────────────────────────────────────────
+firmware/esp32/.pio/
+
+# ── IDE ───────────────────────────────────────────────────
+.idea/
+*.swp
+*.swo
+# VS Code is committed in firmware/esp32/.vscode (PlatformIO-generated)
+# Ignore any VS Code workspaces added at root or dashboard level
+/.vscode/
+/dashboard/.vscode/
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Docker ────────────────────────────────────────────────
+mongodb_data/
